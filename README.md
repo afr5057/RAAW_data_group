@@ -70,3 +70,4 @@ The two data sources used were:
 
 
 * GDP - Gross Domestic Product (GDP) is a broad measurement of a nation’s overall economic activity. GDP is the monetary value of all the finished goods and services produced within a country's borders in a specific time period.
+_Definitions obtained from https://www.investopedia.com/
