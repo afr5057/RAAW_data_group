@@ -28,7 +28,7 @@ The two data sources used were:
     * Health Care
     * Finance
     * Energy
-* Stock prices for 5 years for all publically traded Technology companies on NASDAQ as listed in Yahoo Finance.
+* Stock prices for 5 years for all publicaly traded Technology companies on NASDAQ as listed in Yahoo Finance.
   * This data is presented as daily listings and was obtained using API
 * GDP for 5 years
   * This data is presented as monthly listings and was obtained as flat files (.csv)
