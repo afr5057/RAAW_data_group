@@ -1,4 +1,4 @@
-# RAAW_data_group
+﻿# RAAW_data_group
 Group ETL Project
 
 Collaborators: Vien Vo, Wilson Aliaga, Angel Alejandro, Amy Reynolds
@@ -25,7 +25,7 @@ The two data sources used were:
 * List of all tickers from NASDAQ showing sector (industry)
   * downloaded manually as a .csv file
     * Technology
-    * Healthcare
+    * Health Care
     * Finance
     * Energy
 * Stock prices for 5 years for all publically traded Technology companies on NASDAQ as listed in Yahoo Finance.
