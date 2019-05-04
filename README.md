@@ -21,19 +21,19 @@ The two data sources used were:
 
 #### Datasets:
 * List of all tickers from NASDAQ showing sector (industry)
-** downloaded manually as a .csv file
-*** Technology
-*** Healthcare
-*** Finance
-*** Energy
+  * downloaded manually as a .csv file
+    * Technology
+    * Healthcare
+    * Finance
+    * Energy
 * Stock prices for 5 years for all publically traded Technology companies on NASDAQ as listed in Yahoo Finance.
-** This data is presented as daily listings and was obtained using API
-* GDP for 5 years 
-** This data is presented as monthly listings and was obtained as flat files (.csv)
+  * This data is presented as daily listings and was obtained using API
+* GDP for 5 years
+  * This data is presented as monthly listings and was obtained as flat files (.csv)
 * CPI for 5 years 
-** This data is presented as monthly listings and was obtained as flat files (.csv)
+  * This data is presented as monthly listings and was obtained as flat files (.csv)
 * Unemployment rates for 5 years
-** This data is presented as monthly listings and was obtained as flat files (.csv)
+  * This data is presented as monthly listings and was obtained as flat files (.csv)
 
 #### Normalizing:
 * Specific industries were extracted by sector column to create tables based on key industries 
@@ -46,13 +46,13 @@ The two data sources used were:
 
 ### Load
 * All datasets were loaded as tables in Mongo DB
-** Stock - All
-** CPI
-** GDP
-** Stock - Finance
-** Stock - Healthcare
-** Stock - Energy
-** Stock - Technology
+  * Stock - All
+  * CPI
+  * GDP
+  * Stock - Finance
+  * Stock - Healthcare
+  * Stock - Energy
+  * Stock - Technology
 
 
 
