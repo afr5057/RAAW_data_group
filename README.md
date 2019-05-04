@@ -1,36 +1,71 @@
 # RAAW_data_group
-Names: 
-Vien Vo
-Wilson Aliaga
-Angel Alejandro
-Amy Reynolds
+Group ETL Project
 
-Sources:
-Yahoo Finance
-FRED (Federal Reserve Economic Data)
- 
-1. Extraction
-Type – Full Extraction, Partial Extraction w/ update notifications, Partial Extraction w/o update notifications
-Stock Data – Yahoo Finance – API - library
-Market Data – flat files downloaded from FRED.org
 
-2. Transform
-Raw Data placed into staging server
-Clean
-Yahoo file – need to add Ticker column. Keep column date, close price, keep volume. Drop the rest.
-Market Data – normalize as needed
-Map
-Yahoo quarterly averages to market data by quarter
-Transform
-Yahoo - Group date by quarter, Get average price and volume
+## ETL Project
 
-3. Load
-Into mySQL database using at least 4 tables
-Stock information
-GDP
-CPI
-Unemployment
+Question: How are stock prices in the technology industry affected by market conditions such as gross domestic product (GDP), consumer price index (CPI) and unemployment rates?
 
-4. Questions to answer:
-Do GDP, CPI, or Unemployment affect stock price?
+### Extraction
 
+The two data sources used were:
+
+##### Federal Reserve Economic Data
+  * https://fred.stlouisfed.org/
+##### Yahoo Finance
+  * https://finance.yahoo.com/sector/ms_technology
+
+
+
+### Transformation
+
+#### Datasets:
+* List of all tickers from NASDAQ showing sector (industry)
+** downloaded manually as a .csv file
+*** Technology
+*** Healthcare
+*** Finance
+*** Energy
+* Stock prices for 5 years for all publically traded Technology companies on NASDAQ as listed in Yahoo Finance.
+** This data is presented as daily listings and was obtained using API
+* GDP for 5 years 
+** This data is presented as monthly listings and was obtained as flat files (.csv)
+* CPI for 5 years 
+** This data is presented as monthly listings and was obtained as flat files (.csv)
+* Unemployment rates for 5 years
+** This data is presented as monthly listings and was obtained as flat files (.csv)
+
+#### Normalizing:
+* Specific industries were extracted by sector column to create tables based on key industries 
+Stock prices, GDP CPI and unemployment datasets were grouped by quarter
+
+*The type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc).
+*The type of final production database to load the data into (relational or non-relational).
+*The final tables or collections that will be used in the production database.
+
+### Load
+* Mongo Database
+** All datasets were loaded as tables in Mongo DB
+
+
+
+Project Report
+
+At the end of the week, your team will submit a Final Report that describes the following:
+
+
+Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
+Transform: what data cleaning or transformation was required.
+Load: the final database, tables/collections, and why this was chosen.
+
+
+Please upload the report to Github and submit a link to Bootcampspot.
+
+
+
+
+#### Definitions:
+* CPI -The Consumer Price Index (CPI) is a measure that examines the weighted average of prices of a basket of consumer goods and services, such as transportation, food and medical care. It is calculated by taking price changes for each item in the predetermined basket of goods and averaging them. Changes in the CPI are used to assess price changes associated with the cost of living; the CPI is one of the most frequently used statistics for identifying periods of inflation or deflation.
+
+
+* GDP - Gross Domestic Product (GDP) is a broad measurement of a nation’s overall economic activity. GDP is the monetary value of all the finished goods and services produced within a country's borders in a specific time period.
