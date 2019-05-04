@@ -1,6 +1,8 @@
 # RAAW_data_group
 Group ETL Project
 
+Collaborators: Vien Vo, Wilson Aliaga, Angel Alejandro, Amy Reynolds
+
 
 ## ETL Project
 
