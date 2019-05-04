@@ -37,31 +37,30 @@ The two data sources used were:
 
 #### Normalizing:
 * Specific industries were extracted by sector column to create tables based on key industries 
-Stock prices, GDP CPI and unemployment datasets were grouped by quarter
+* Stock prices, GDP CPI and unemployment datasets were grouped by quarter
+* Normalization of the format of quarter to "YYYY-MM-DD"
 
 *The type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc).
 *The type of final production database to load the data into (relational or non-relational).
 *The final tables or collections that will be used in the production database.
 
 ### Load
-* Mongo Database
-** All datasets were loaded as tables in Mongo DB
+* All datasets were loaded as tables in Mongo DB
+** Stock - All
+** CPI
+** GDP
+** Stock - Finance
+** Stock - Healthcare
+** Stock - Energy
+** Stock - Technology
 
 
 
-Project Report
+## Final Report contents:
 
-At the end of the week, your team will submit a Final Report that describes the following:
-
-
-Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
-Transform: what data cleaning or transformation was required.
-Load: the final database, tables/collections, and why this was chosen.
-
-
-Please upload the report to Github and submit a link to Bootcampspot.
-
-
+* Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
+* Transform: what data cleaning or transformation was required.
+* Load: the final database, tables/collections, and why this was chosen.
 
 
 #### Definitions:
