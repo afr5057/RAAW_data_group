@@ -15,7 +15,7 @@ The two data sources used were:
 ##### Federal Reserve Economic Data
   * https://fred.stlouisfed.org/
 ##### Yahoo Finance
-  * https://finance.yahoo.com/sector/ms_technology
+  * https://finance.yahoo.com
 
 
 
@@ -47,7 +47,7 @@ The two data sources used were:
 *The final tables or collections that will be used in the production database.
 
 ### Load
-* All datasets were loaded as tables in Mongo DB
+* All datasets were loaded in Mongo DB as the following tables
   * Stock - All
   * CPI
   * GDP
