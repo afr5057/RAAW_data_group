@@ -4,7 +4,7 @@ Group ETL Project
 
 ## ETL Project
 
-Question: How are stock prices in the technology industry affected by market conditions such as gross domestic product (GDP), consumer price index (CPI) and unemployment rates?
+Question: How are stock prices affected by market conditions such as gross domestic product (GDP), consumer price index (CPI) and unemployment rates?
 
 ### Extraction
 
