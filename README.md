@@ -1,8 +1,11 @@
 ﻿# RAAW_data_group
 Group ETL Project
 
-Collaborators: Vien Vo, Wilson Aliaga, Angel Alejandro, Amy Reynolds
+Collaborators: Vien Vo, Wilson Aliaga, Angel Alejandro, Amy Reynolds<br>
 
+## Steps to run program
+* Step 1: Open and run /codes/Stock-COMBINED.ipynb
+* Step 2: Open and run app.py
 
 ## ETL Project
 
